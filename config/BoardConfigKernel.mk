@@ -29,6 +29,7 @@
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to true
 #   TARGET_KERNEL_CLANG_VERSION        = Clang prebuilts version, optional, defaults to clang-stable
 #   TARGET_KERNEL_CLANG_PATH           = Clang prebuilts path, optional
+#   TARGET_KERNEL_NEW_GCC_COMPILE      = Compile kernel with newer version GCC, defaults to false
 #
 #   TARGET_KERNEL_LLVM_BINUTILS        = Use LLVM binutils, defaults to true
 #   TARGET_KERNEL_NO_GCC               = Fully compile the kernel without GCC.
@@ -114,12 +115,25 @@ TOOLS_PATH_OVERRIDE := \
 
 ifneq ($(KERNEL_NO_GCC), true)
     GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)
-    # arm64 toolchain
-    KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
-    KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-linux-android-
-    # arm toolchain
-    KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-linux-androideabi-4.9/bin
-    KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-androidkernel-
+
+    ifeq ($(TARGET_KERNEL_NEW_GCC_COMPILE),true)
+        ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
+            $(error TARGET_KERNEL_NEW_GCC_COMPILE cannot be used with TARGET_KERNEL_CLANG_COMPILE!)
+        endif
+        # arm64 toolchain
+        KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-elf/bin
+        KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-elf-
+        # arm toolchain
+        KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-eabi/bin
+        KERNEL_TOOLCHAIN_PREFIX_arm := arm-eabi-
+    else
+        # arm64 toolchain
+        KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
+        KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-linux-android-
+        # arm toolchain
+        KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-linux-androideabi-4.9/bin
+        KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-androidkernel-
+    endif
     # x86 toolchain
     KERNEL_TOOLCHAIN_x86 := $(GCC_PREBUILTS)/x86/x86_64-linux-android-4.9/bin
     KERNEL_TOOLCHAIN_PREFIX_x86 := x86_64-linux-android-
