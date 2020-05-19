@@ -181,7 +181,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
-    ThemedIconsOverlay
+    ThemedIconsOverlay \
+    NavigationBarNoHintOverlay
 
 # Translations
 CUSTOM_LOCALES += \
