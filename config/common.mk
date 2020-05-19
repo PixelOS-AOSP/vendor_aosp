@@ -190,7 +190,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay \
-    ThemedIconsOverlay
+    ThemedIconsOverlay \
+    NavigationBarNoHintOverlay
 
 include vendor/aosp/config/version.mk
 
