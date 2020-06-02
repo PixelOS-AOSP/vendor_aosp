@@ -267,6 +267,10 @@ PRODUCT_PACKAGES += \
 
 include vendor/aosp/config/version.mk
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
