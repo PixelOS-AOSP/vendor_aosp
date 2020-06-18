@@ -231,6 +231,23 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
     else
         # Use the default version of clang if TARGET_KERNEL_CLANG_VERSION hasn't been set by the device config
         KERNEL_CLANG_VERSION := $(LLVM_PREBUILTS_VERSION)
+    	endif
+
+    # As
+    ifeq ($(KERNEL_SUPPORTS_LLVM_TOOLS),true)
+        KERNEL_LD := LD=ld.lld
+        KERNEL_AR := AR=llvm-ar
+        KERNEL_OBJCOPY := OBJCOPY=llvm-objcopy
+        KERNEL_OBJDUMP := OBJDUMP=llvm-objdump
+        KERNEL_NM := NM=llvm-nm
+        KERNEL_STRIP := STRIP=llvm-strip
+    else
+        KERNEL_LD :=
+        KERNEL_AR :=
+        KERNEL_OBJCOPY :=
+        KERNEL_OBJDUMP :=
+        KERNEL_NM :=
+        KERNEL_STRIP :=
     endif
     TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
     ifeq ($(KERNEL_ARCH),arm64)
