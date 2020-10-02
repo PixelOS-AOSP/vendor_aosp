@@ -103,6 +103,12 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common \
     vendor/aosp/overlay-pixel/common
 
+# Custom Overlays
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
+
 # TouchGestures
 PRODUCT_PACKAGES += \
     TouchGestures
