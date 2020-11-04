@@ -69,5 +69,9 @@
 
         <!-- Now Playing (Pixel 2017) -->
         <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=181:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20210704-030024/manifest.json</item>
+
+        <!-- Disable unused AiAi features -->
+        <item>device_personalization_services/Attention__enabled=false</item>
+        <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
     </string-array>
 </resources>
