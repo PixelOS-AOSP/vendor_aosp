@@ -210,6 +210,21 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 # Fonts
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
+# Face Unlock
+ifeq ($(TARGET_FACE_UNLOCK), true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+
+PRODUCT_COPY_FILES += \
+    vendor/apps/FaceUnlock/prebuilt/product/etc/default-permissions/facesense-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/facesense-default-permissions.xml
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.sense_service=true
+else
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.sense_service=false
+endif
+
 # GApps
 $(call inherit-product, vendor/gapps/config.mk)
 
