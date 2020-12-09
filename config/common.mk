@@ -106,6 +106,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     TouchGestures
 
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
