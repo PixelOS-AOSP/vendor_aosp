@@ -54,6 +54,9 @@
         <!-- Enable use of coarse/fine location -->
         <item>privacy/location_accuracy_enabled=true</item>
 
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
