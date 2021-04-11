@@ -240,3 +240,6 @@ PRODUCT_PACKAGES += \
 endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+#POSP Audio Plugins
+include packages/apps/Plugins/plugins.mk
