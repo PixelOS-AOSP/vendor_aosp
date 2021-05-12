@@ -187,18 +187,6 @@ PRODUCT_PACKAGES += \
     PixelLiveWallpapersOverlay
 endif
 
-# Face Unlock
-#TARGET_FACE_UNLOCK_SUPPORTED ?= true
-#ifneq ($(TARGET_GAPPS_ARCH),arm64)
-#TARGET_FACE_UNLOCK_SUPPORTED := false
-#endif
-#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-#PRODUCT_PACKAGES += \
-#    FaceUnlockService
-#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-#    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
-#endif
-
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
@@ -209,7 +197,6 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
 # Face Unlock
-ifeq ($(TARGET_FACE_UNLOCK), true)
 PRODUCT_PACKAGES += \
     FaceUnlockService
 
@@ -218,10 +205,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.sense_service=true
-else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face.sense_service=false
-endif
 
 # GApps
 $(call inherit-product, vendor/gapps/config.mk)
