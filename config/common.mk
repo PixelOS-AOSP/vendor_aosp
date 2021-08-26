@@ -176,18 +176,6 @@ PRODUCT_PACKAGES += \
     PixelLiveWallpapersOverlay
 endif
 
-# Face Unlock
-#TARGET_FACE_UNLOCK_SUPPORTED ?= true
-#ifneq ($(TARGET_GAPPS_ARCH),arm64)
-#TARGET_FACE_UNLOCK_SUPPORTED := false
-#endif
-#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-#PRODUCT_PACKAGES += \
-#    FaceUnlockService
-#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-#    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
-#endif
-
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
@@ -198,18 +186,14 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
 # Face Unlock
-ifeq ($(DISABLE_FACE_UNLOCK), true)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face.sense_service=false
-else
+TARGET_FACE_UNLOCK_SUPPORTED ?= true
+ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
     FaceUnlockService
-
-PRODUCT_COPY_FILES += \
-    vendor/apps/FaceUnlock/prebuilt/product/etc/default-permissions/facesense-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/facesense-default-permissions.xml
-
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face.sense_service=true
+    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
 # GApps
