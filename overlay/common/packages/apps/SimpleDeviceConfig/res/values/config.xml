@@ -60,6 +60,9 @@
         <!-- Don't pin camera app to save memory -->
         <item>runtime_native_boot/pin_camera=false</item>
 
+        <!-- Keep up to 7 days of permission usage history -->
+        <item>privacy/discrete_history_cutoff_millis=604800000</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
