@@ -57,6 +57,9 @@
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
+        <!-- Don't pin camera app to save memory -->
+        <item>runtime_native_boot/pin_camera=false</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
