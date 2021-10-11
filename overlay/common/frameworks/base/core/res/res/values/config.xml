@@ -156,4 +156,10 @@
 
      <!-- Allows setting custom fontFeatureSettings on specific text. -->
     <string name="config_headlineFontFeatureSettings">ss03</string>
+
+    <!-- Name of a font family to use for body text. -->
+    <string name="config_bodyFontFamily">google-sans-text</string>
+
+    <!-- Name of a font family to use for medium body text. -->
+    <string name="config_bodyFontFamilyMedium">google-sans-text-medium</string>
 </resources>
