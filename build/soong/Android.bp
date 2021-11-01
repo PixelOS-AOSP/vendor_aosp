@@ -157,7 +157,7 @@ soong_config_module_type {
     name: "surfaceflinger_udfps_lib",
     module_type: "cc_defaults",
     config_namespace: "customGlobalVars",
-    value_variables: ["target_surfaceflinger_fod_lib"],
+    value_variables: ["target_surfaceflinger_udfps_lib"],
     properties: [
         "cppflags",
         "whole_static_libs",
