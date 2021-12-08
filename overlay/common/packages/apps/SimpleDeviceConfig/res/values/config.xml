@@ -50,5 +50,8 @@
 
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
+
+        <!-- Enable use of coarse/fine location -->
+        <item>privacy/location_accuracy_enabled=true</item>
     </string-array>
 </resources>
