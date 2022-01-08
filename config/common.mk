@@ -261,6 +261,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     CustomFontPixelLauncherOverlay \
+    AndroidBlackThemeOverlay \
     NavigationBarNoHintOverlay \
     NetworkStackOverlay \
     NexusLauncherResOverlay \
