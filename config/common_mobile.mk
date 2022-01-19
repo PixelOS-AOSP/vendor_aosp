@@ -64,7 +64,14 @@ PRODUCT_PACKAGES += \
     IconPackRoundedLauncherOverlay \
     IconPackRoundedSettingsOverlay \
     IconPackRoundedSystemUIOverlay \
-    IconPackRoundedThemePickerOverlay
+    IconPackRoundedThemePickerOverlay \
+    IconShapePebbleOverlay \
+    IconShapeRoundedRectOverlay \
+    IconShapeSquareOverlay \
+    IconShapeSquircleOverlay \
+    IconShapeTaperedRectOverlay \
+    IconShapeTeardropOverlay \
+    IconShapeVesselOverlay
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
