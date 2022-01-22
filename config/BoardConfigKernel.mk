@@ -59,7 +59,20 @@ KERNEL_VERSION := $(shell grep "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile | 
 KERNEL_PATCHLEVEL := $(shell grep "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
-CLANG_PREBUILTS := $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/clang-r416183b1
+ifneq ($(TARGET_CLANG_PREBUILTS_VERSION),)
+    ifeq ($(TARGET_CLANG_PREBUILTS_VERSION),latest)
+        # Set the latest version of clang
+        CLANG_PREBUILTS_VERSION := $(shell ls -d $(BUILD_TOP)/prebuilts/clang/host/$(HOST_OS)-x86/clang-r* | xargs -n 1 basename | tail -1)
+    else
+        # Find the clang-* directory containing the specified version
+        CLANG_PREBUILTS_VERSION := clang-$(TARGET_CLANG_PREBUILTS_VERSION)
+    endif
+else
+    # Use the default version of clang if TARGET_CLANG_PREBUILTS_VERSION hasn't been set by the device config
+    CLANG_PREBUILTS_VERSION := clang-r416183b1
+endif
+
+CLANG_PREBUILTS := $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(CLANG_PREBUILTS_VERSION)
 GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)
 
 # x86 toolchain
