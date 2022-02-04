@@ -569,4 +569,11 @@
     <icon drawable="@drawable/stremio" package="com.stremio.one" />
     <icon drawable="@drawable/pixel_wallpapers" package="dev.wacko1805.pixel.wallpapers" />
     <icon drawable="@drawable/microsoft_edge_canary" package="com.microsoft.emmx.canary" />
+    <icon drawable="@drawable/babbel" package="com.babbel.mobile.android.en" />
+    <icon drawable="@drawable/corona_tracing" package="de.corona.tracing" />
+    <icon drawable="@drawable/life360" package="com.life360.android.safetymapd" />
+    <icon drawable="@drawable/parsec" package="tv.parsec.client" />
+    <icon drawable="@drawable/ticktick" package="com.ticktick.task" />
+    <icon drawable="@drawable/flamingo" package="com.samruston.twitter" />
+    <icon drawable="@drawable/eksi_sozluk" package="com.eksiteknoloji.eksisozluk" />
 </icons>
