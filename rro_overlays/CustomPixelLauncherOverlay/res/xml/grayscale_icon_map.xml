@@ -576,4 +576,5 @@
     <icon drawable="@drawable/ticktick" package="com.ticktick.task" />
     <icon drawable="@drawable/flamingo" package="com.samruston.twitter" />
     <icon drawable="@drawable/eksi_sozluk" package="com.eksiteknoloji.eksisozluk" />
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCamerax" />
 </icons>
