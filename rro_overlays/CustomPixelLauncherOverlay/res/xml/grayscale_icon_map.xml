@@ -577,4 +577,14 @@
     <icon drawable="@drawable/flamingo" package="com.samruston.twitter" />
     <icon drawable="@drawable/eksi_sozluk" package="com.eksiteknoloji.eksisozluk" />
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCamerax" />
+    <icon drawable="@drawable/bose_music" package="com.bose.bosemusic" />
+    <icon drawable="@drawable/discord" package="com.aliucord" />
+    <icon drawable="@drawable/files" package="com.huawei.hidisk" />
+    <icon drawable="@drawable/gallery" package="com.huawei.photos" />
+    <icon drawable="@drawable/google_pay" package="com.google.android.apps.walletnfcrel" />
+    <icon drawable="@drawable/inware" package="com.evo.inware" />
+    <icon drawable="@drawable/material_catalog" package="io.material.catalog" />
+    <icon drawable="@drawable/messages" package="com.oneplus.mms" />
+    <icon drawable="@drawable/newpipe" package="org.polymorphicshade.newpipe" />
+    <icon drawable="@drawable/ungoogled_chromium" package="org.ungoogled.chromium.stable" />
 </icons>
