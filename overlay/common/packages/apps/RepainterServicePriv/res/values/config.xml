@@ -49,9 +49,11 @@
         will automatically use the nearest supported shade until your exact shade is added.
     -->
     <string-array name="config_boot_animation_colors" translatable="false">
+        <!--
         <item>accent1/100</item>
         <item>accent1/600</item>
         <item>neutral1/50</item>
         <item>neutral2/300</item>
+        -->
     </string-array>
 </resources>
