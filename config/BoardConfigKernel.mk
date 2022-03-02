@@ -160,9 +160,14 @@ endif
 # Set use the full path to the make command
 KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/make
 
-# Set the full path to the clang command
-KERNEL_MAKE_FLAGS += HOSTCC=$(CLANG_PREBUILTS)/bin/clang
-KERNEL_MAKE_FLAGS += HOSTCXX=$(CLANG_PREBUILTS)/bin/clang++
+# Set the full path to the clang/gcc command
+ifeq ($(TARGET_KERNEL_NEW_GCC_COMPILE),true)
+	KERNEL_MAKE_FLAGS += HOSTCC=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/aarch64-elf-gcc
+	KERNEL_MAKE_FLAGS += HOSTCXX=$(GCC_PREBUILTS)/aarch64/aarch64-elf/bin/aarch64-elf-g++
+else
+	KERNEL_MAKE_FLAGS += HOSTCC=$(CLANG_PREBUILTS)/bin/clang
+	KERNEL_MAKE_FLAGS += HOSTCXX=$(CLANG_PREBUILTS)/bin/clang++
+endif
 
 # Since Linux 4.16, flex and bison are required
 KERNEL_MAKE_FLAGS += LEX=$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/flex
