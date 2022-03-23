@@ -33,6 +33,7 @@ SOONG_CONFIG_customGlobalVars += \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
+    uses_egl_display_array
 
 SOONG_CONFIG_NAMESPACES += customNvidiaVars
 SOONG_CONFIG_customNvidiaVars += \
@@ -55,6 +56,7 @@ SOONG_CONFIG_customNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK
 SOONG_CONFIG_customQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_customQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_customQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
+SOONG_CONFIG_customGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
