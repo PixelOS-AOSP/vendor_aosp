@@ -1,7 +1,7 @@
 # Branding
 $(call inherit-product, vendor/aosp/config/branding.mk)
 
-PRODUCT_BRAND ?= PixelExperience
+PRODUCT_BRAND ?= PixelOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
