@@ -96,6 +96,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
+# OTA
+ifeq ($(IS_OFFICIAL), true)
+PRODUCT_PACKAGES += \
+    Updates
+endif
+
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/aosp/overlay
@@ -206,9 +212,6 @@ $(call inherit-product, vendor/aosp/config/fonts.mk)
 
 # GApps
 $(call inherit-product, vendor/gapps/config.mk)
-
-# OTA
-$(call inherit-product, vendor/aosp/config/ota.mk)
 
 # RRO Overlays
 $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
