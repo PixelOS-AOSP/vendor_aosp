@@ -201,6 +201,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+# Adaptive Charging
+ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/sysconfig/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml
+endif
+
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
