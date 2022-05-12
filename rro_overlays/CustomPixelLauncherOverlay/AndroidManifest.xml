@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    package="com.romcontrolicons.nexuslauncher"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <overlay
+        android:priority="0"
+        android:targetPackage="com.google.android.apps.nexuslauncher"
+        android:category="com.google.android.apps.nexuslauncher.themed_icons"
+        android:isStatic="true" />
+    <application
+        android:label="Custom_Themed_Icons"
+        android:hasCode="false"
+        android:extractNativeLibs="true" />
+</manifest>
