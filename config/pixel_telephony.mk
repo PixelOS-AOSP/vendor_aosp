@@ -288,3 +288,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Include Carrier Runtime Configuration
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/CarrierSettings/overlay
+
+# Pixel APNs
+PRODUCT_COPY_FILES += \
+    vendor/aosp/telephony/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
