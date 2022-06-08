@@ -241,7 +241,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
-    ThemedIconsOverlay
+    ThemedIconsOverlay \
+    CustomFontPixelLauncherOverlay
 
 include vendor/aosp/config/version.mk
 
