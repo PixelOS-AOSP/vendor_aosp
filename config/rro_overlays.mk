@@ -25,4 +25,5 @@ PRODUCT_PACKAGES += \
     PixelFwResOverlay \
     GoogleConfigOverlay \
     SystemUIGoogleOverlay \
-    CustomPixelLauncherOverlay
+    CustomPixelLauncherOverlay \
+    CustomFontPixelLauncherOverlay
