@@ -809,7 +809,7 @@
         package="com.google.android.apps.chromecast.app" />
     <icon
         drawable="@drawable/themed_icon_hotstar"
-        package="in.startv.hotstar.dplus" />
+        package="in.startv.hotstar" />
     <icon
         drawable="@drawable/themed_icon_ibis_paint"
         package="jp.ne.ibis.ibispaintx.app" />
