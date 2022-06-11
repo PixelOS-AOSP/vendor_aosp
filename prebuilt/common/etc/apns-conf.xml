@@ -67,13 +67,10 @@
   <apn carrier="Ziggo Mobiel" mcc="204" mnc="04" apn="ziggo.dataxs.mobi" authtype="1" type="default,supl" />
   <apn carrier="Truphone" mcc="204" mnc="04" apn="truphone.com" type="default,dun" mvno_match_data="204043914" mvno_type="imsi" />
   <apn carrier="Truphone" mcc="204" mnc="04" apn="truphone.com" type="default,dun" mvno_match_data="20404794" mvno_type="imsi" />
-  <apn carrier="KPN 4G LTE" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
-  <apn carrier="KPN GPRS" mcc="204" mnc="08" apn="internet" user="kpn" password="gprs" type="default,supl" />
-  <apn carrier="KPN Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="*" />
-  <apn carrier="Hi Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="*" />
-  <apn carrier="Simyo Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" authtype="1" type="default,supl,mms" />
-  <apn carrier="Ortel Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" authtype="1" type="default,supl,mms" />
-  <apn carrier="Youfone Internet" mcc="204" mnc="08" apn="portalmmm.nl" proxy="" port="" user="" password="" type="default" />
+  <apn carrier="KPN Mobiel Internet" mcc="204" mnc="08" apn="internet" type="default" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="IMS" mcc="204" mnc="08" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="KPN/Hi 4G LTE Mobiel internet" mcc="204" mnc="08" apn="KPN4G.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
+  <apn carrier="KPN/Hi Mobiel Internet" mcc="204" mnc="08" apn="portalmmm.nl" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" type="default,supl,mms" />
   <apn carrier="Lebara Internet" mcc="204" mnc="08" apn="multimedia.lebara.nl" proxy="" port="" user="" password="" mmsc="http://mp.mobiel.kpn/mmsc" mmsproxy="10.10.100.20" mmsport="5080" authtype="1" type="default,supl,mms" />
   <apn carrier="AH Mobiel Internet" mcc="204" mnc="08" apn="multimedia.ah.nl" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="193.113.200.195" mmsport="8080" type="*" />
   <apn carrier="MVNO NL" mcc="204" mnc="08" apn="internet.mvno.mobi" user="mvno" password="mvno" authtype="1" type="default,supl" mvno_match_data="204080950" mvno_type="imsi" />
@@ -2839,13 +2836,10 @@
   <apn carrier="Du MMS" mcc="424" mnc="03" apn="du" proxy="" port="" mmsproxy="10.19.18.4" mmsport="8080" mmsc="http://mms.du.ae:8002" user="" password="" authtype="1" type="mms" />
   <apn carrier="Du WAP" mcc="424" mnc="03" apn="du" proxy="10.19.18.4" port="8080" mmsc="" user="" password="" type="default,supl" />
   <apn carrier="du" mcc="424" mnc="03" apn="du" mmsc="http://mms.du.ae" mmsproxy="10.19.18.4" mmsport="9201" type="default,supl,mms" />
-  <apn carrier="3G Portal" mcc="425" mnc="01" apn="uwap.orange.co.il" mmsproxy="192.118.11.55" mmsport="8080" mmsc="http://192.168.220.15/servlets/mms" type="default,mms" />
-  <apn carrier="3G Portal" mcc="425" mnc="01" apn="uwap.orange.co.il" port="8080" type="default,supl" />
-  <apn carrier="MMS 3G" mcc="425" mnc="01" apn="uwap.orange.co.il" mmsc="http://192.168.220.15/servlets/mms" mmsport="8080" type="mms" />
-  <apn carrier="Internet 3G" mcc="425" mnc="01" apn="modem.orange.net.il" type="default,supl" />
-  <apn carrier="Orange IL" mcc="425" mnc="01" apn="internet" proxy="" port="" user="orange" password="orange" mmsc="" type="default,supl" />
-  <apn carrier="Orange IL MMS" mcc="425" mnc="01" apn="wap.orange.co.il" proxy="" port="" user="" password="" mmsc="http://192.168.220.15/servlets/mms" mmsproxy="" mmsport="8080" type="mms" />
-  <apn carrier="Vodafone MT" mcc="425" mnc="01" apn="Internet" proxy="" port="" user="" password="Internet" mmsc="" type="default,supl" />
+  <apn carrier="Partner" mcc="425" mnc="01" apn="uinternet" mmsc="http://192.168.220.15/servlets/mms" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="ims" mcc="425" mnc="01" apn="ims" type="ims" protocol="IPV6" roaming_protocol="IPV6" />
+  <apn carrier="3G Portal" mcc="425" mnc="01" apn="uwap.orange.co.il" type="default,supl,mms" mmsc="http://192.168.220.15/servlets/mms" mmsport="8080" />
+  <apn carrier="3G DUN" mcc="425" mnc="01" apn="modem.orange.net.il" type="dun" authtype="0" port="8080" />
   <apn carrier="Cellcom 3G" mcc="425" mnc="02" apn="internetg" type="default,supl" />
   <apn carrier="Cellcom MMS" mcc="425" mnc="02" apn="MMS" mmsproxy="172.31.29.38" mmsport="8080" mmsc="http://mms.cellcom.co.il" type="mms" />
   <apn carrier="CellCOM" mcc="425" mnc="02" apn="sphone" type="default,supl" />
@@ -3123,16 +3117,12 @@
   <apn carrier="联通IMS" mcc="460" mnc="01" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="CTNET" mcc="460" mnc="01" apn="ctnet" type="default,dun,xcap" authtype="3" user="ctnet@mycdma.cn" password="vnet.mobi" mvno_type="spn" mvno_match_data="China Telecom" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="IMS" mcc="460" mnc="01" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="spn" mvno_match_data="China Telecom" />
-  <apn carrier="中国移动因特网设置" mcc="460" mnc="02" apn="cmnet" user="" password="" authtype="3" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="中国移动WAP设置" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" mmsc="" user="" password="" authtype="3" type="default,supl" />
-  <apn carrier="中国移动彩信设置" mcc="460" mnc="02" apn="cmwap" proxy="" port="" mmsproxy="10.0.0.172" mmsport="80" mmsc="http://mmsc.monternet.com" user="" password="" authtype="3" type="mms" />
-  <apn carrier="中国移动 GPRS (China Mobile)" mcc="460" mnc="02" apn="cmnet" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="中国移动 Wap 网络 (China Mobile)" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" />
-  <apn carrier="中国移动彩信 (China Mobile)" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" mmsc="http://mmsc.monternet.com" mmsproxy="10.0.0.172" mmsport="80" type="mms" />
-  <apn carrier="China Mobile" mcc="460" mnc="02" apn="cmnet" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="China Mobile MMS" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" mmsc="http://mmsc.monternet.com" mmsproxy="10.0.0.172" mmsport="80" type="mms" />
-  <apn carrier="China Mobile" mcc="460" mnc="02" apn="cmnet" proxy="" port="" user="" password="" mmsc="" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="China Mobile MMS" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" user="" password="" mmsc="http://mmsc.monternet.com" mmsproxy="10.0.0.172" mmsport="80" type="mms" />
+  <apn carrier="China Mobile" mcc="460" mnc="02" apn="" type="ia" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="CMCC DM" mcc="460" mnc="02" apn="" type="fota" />
+  <apn carrier="China Mobile MMS" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" mmsproxy="10.0.0.172" mmsport="80" mmsc="http://mmsc.monternet.com" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="China Mobile WAP" mcc="460" mnc="02" apn="cmwap" proxy="10.0.0.172" port="80" authtype="3" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="China Mobile" mcc="460" mnc="02" apn="cmnet" type="default,net,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="China Mobile (IMS)" mcc="460" mnc="02" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" profile_id="2" modem_cognitive="true" max_conns="1023" max_conns_time="300" />
   <apn carrier="中国电信 (China Telecom) GPRS" mcc="460" mnc="03" apn="ctnet" proxy="" port="" user="ctnet@mycdma.cn" password="vnet.mobi" mmsc="" authtype="3" type="default,hipri,internet,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="中国电信彩信 (China Telecom)" mcc="460" mnc="03" apn="ctwap" authtype="3" mmsc="http://mmsc.vnet.mobi" mmsport="80" mmsprotocol="2.0" mmsproxy="10.0.0.200" password="vnet.mobi" type="mms" user="ctwap@mycdma.cn" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="IMS" mcc="460" mnc="03" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
@@ -3156,9 +3146,8 @@
   <apn carrier="沃宽带用户连接互联网" mcc="460" mnc="09" apn="3gnet" type="default,supl,xcap" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="沃宽带用户手机上网" mcc="460" mnc="09" apn="3gwap" proxy="10.0.0.172" port="80" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="联通彩信" mcc="460" mnc="09" apn="3gwap" proxy="10.0.0.172" port="80" mmsproxy="10.0.0.172" mmsport="80" mmsc="http://mmsc.myuni.com.cn" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="China Unicom MMS" mcc="460" mnc="09" apn="3gwap" mmsproxy="10.0.0.172" mmsport="80" mmsc="http://mmsc.myuni.com.cn" type="mms" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="联通IMS" mcc="460" mnc="09" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="China Unicom 3G" mcc="460" mnc="09" apn="3gnet" port="80" type="default,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
-  <apn carrier="China Unicom wap" mcc="460" mnc="09" apn="3gwap" proxy="10.0.0.172" port="80" mmsproxy="10.0.0.172" mmsport="80" mmsc="http://mmsc.myuni.com.cn" type="default, mms" />
   <apn carrier="APN_NAME_CTNET" apn="ctnet" mcc="460" mnc="11" type="ia" user_editable="0" profile_id="1" user_visible="0" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="中国电信 (China Telecom) GPRS" mcc="460" mnc="11" apn="ctnet" authtype="3" password="vnet.mobi" type="default,hipri,internet,supl" user="ctnet@mycdma.cn" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="IMS" mcc="460" mnc="11" apn="ims" type="ims" protocol="IPV4V6" />
