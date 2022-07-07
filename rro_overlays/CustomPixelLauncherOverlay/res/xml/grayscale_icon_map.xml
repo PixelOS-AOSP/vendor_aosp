@@ -2064,4 +2064,7 @@
     <icon
         drawable="@drawable/themed_icon_microsoft_edge"
         package="com.microsoft.emmx.canary" />
+    <icon
+        drawable="@drawable/themed_icon_youtube"
+        package="app.revanced.android.youtube" />
 </icons>
