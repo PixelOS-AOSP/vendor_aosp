@@ -218,7 +218,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.iorapd.enable=true
+    ro.iorapd.enable=false
 
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
