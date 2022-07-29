@@ -2067,4 +2067,7 @@
     <icon
         drawable="@drawable/themed_icon_youtube"
         package="app.revanced.android.youtube" />
+    <icon
+        drawable="@drawable/themed_icon_pharmeasy"
+        package="com.phonegap.rxpal" />
 </icons>
