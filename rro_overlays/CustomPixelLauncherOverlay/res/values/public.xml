@@ -644,7 +644,7 @@
     <public type="drawable" name="themed_icon_ykb" id="0x7f020290" />
     <public type="drawable" name="themed_icons_tt" id="0x7f020291" />
     <public type="drawable" name="themed_icon_tachiyomi" id="0x7f020292" />
-    <public type="drawable" name="themed_icon_pharmeasy" id="0x7f020292" />
+    <public type="drawable" name="themed_icon_pharmeasy" id="0x7f020293" />
     <public type="xml" name="grayscale_icon_map" id="0x7f030000" />
     <public type="array" name="grayscale_calendar_icons" id="0x7f040000" />
     <public type="array" name="grayscale_clock_icons" id="0x7f040001" />
