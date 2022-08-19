@@ -1,4 +1,5 @@
 # Copyright (C) 2018-2020 ArrowOS
+# Copyright (C) 2022 PixelOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +17,6 @@ include vendor/aosp/config/version.mk
 
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common
-
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/aosp/overlay/themes/ArrowIcons
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/aosp/overlay/common
