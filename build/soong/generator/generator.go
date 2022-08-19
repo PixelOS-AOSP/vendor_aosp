@@ -28,7 +28,7 @@ import (
 )
 
 func init() {
-	android.RegisterModuleType("arrow_generator", GeneratorFactory)
+	android.RegisterModuleType("custom_generator", GeneratorFactory)
 }
 
 var String = proptools.String
@@ -208,12 +208,12 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	if depRoot == "" {
 		depRoot = ctx.ModuleDir()
 	} else {
-		depRoot = arrowExpandVariables(ctx, depRoot)
+		depRoot = customExpandVariables(ctx, depRoot)
 	}
 
 	// Glob dep_files property
 	for _, dep_file := range g.properties.Dep_files {
-		dep_file = arrowExpandVariables(ctx, dep_file)
+		dep_file = customExpandVariables(ctx, dep_file)
 		globPath := filepath.Join(depRoot, dep_file)
 		paths, err := ctx.GlobWithDeps(globPath, nil)
 		if err != nil {
@@ -225,7 +225,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		}
 	}
 
-	cmd := arrowExpandVariables(ctx, String(g.properties.Cmd))
+	cmd := customExpandVariables(ctx, String(g.properties.Cmd))
 
 	rawCommand, err := android.Expand(cmd, func(name string) (string, error) {
 		switch name {

@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/arrow/config/version.mk
+include vendor/aosp/config/version.mk
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/arrow/overlay/common
+    vendor/aosp/overlay/common
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/arrow/overlay/themes/ArrowIcons
+    vendor/aosp/overlay/themes/ArrowIcons
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/arrow/overlay/common
+    vendor/aosp/overlay/common
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -30,7 +30,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
-    vendor/arrow/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
+    vendor/aosp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -38,24 +38,24 @@ PRODUCT_COPY_FILES += \
 
 # init file
 PRODUCT_COPY_FILES += \
-    vendor/arrow/prebuilt/common/etc/init/init.arrow-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.arrow-system_ext.rc \
-    vendor/arrow/prebuilt/common/etc/init/init.arrow-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.arrow-updater.rc \
-    vendor/arrow/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
+    vendor/aosp/prebuilt/common/etc/init/init.custom-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-system_ext.rc \
+    vendor/aosp/prebuilt/common/etc/init/init.custom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-updater.rc \
+    vendor/aosp/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/arrow/build/tools/backuptool.sh:install/bin/backuptool.sh \
-    vendor/arrow/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    vendor/arrow/build/tools/50-arrow.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-arrow.sh
+    vendor/aosp/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aosp/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aosp/build/tools/50-custom.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-custom.sh
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/addon.d/50-arrow.sh
+    system/addon.d/50-custom.sh
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
-    vendor/arrow/build/tools/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
-    vendor/arrow/build/tools/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
-    vendor/arrow/build/tools/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
+    vendor/aosp/build/tools/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
+    vendor/aosp/build/tools/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
+    vendor/aosp/build/tools/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/backuptool_ab.sh \
@@ -74,7 +74,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
-    vendor/arrow/prebuilt/common/etc/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml
+    vendor/aosp/prebuilt/common/etc/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
@@ -88,16 +88,16 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Bootanimation
-include vendor/arrow/config/bootanimation.mk
+include vendor/aosp/config/bootanimation.mk
 
 # Fonts
-include vendor/arrow/config/fonts.mk
+include vendor/aosp/config/fonts.mk
 
 # Packages
-include vendor/arrow/config/packages.mk
+include vendor/aosp/config/packages.mk
 
 # Props
-include vendor/arrow/config/props.mk
+include vendor/aosp/config/props.mk
 
 # Sounds
-include vendor/arrow/config/sounds.mk
+include vendor/aosp/config/sounds.mk
