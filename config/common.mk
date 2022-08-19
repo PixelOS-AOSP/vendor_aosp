@@ -238,7 +238,8 @@ endif
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SystemUIGoogle \
+    NexusLauncherRelease
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
