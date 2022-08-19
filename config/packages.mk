@@ -1,4 +1,5 @@
 # Copyright (C) 2018-2020 ArrowOS
+# Copyright (C) 2022 PixelOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,19 +16,7 @@
 
 # Required packages
 PRODUCT_PACKAGES += \
-    BluetoothExt \
-    SimpleCalendar \
-    DuckDuckGo \
-    ExactCalculator \
-    LatinIME \
-    Launcher3QuickStep \
-    messaging \
-    SimpleGallery \
-    Stk \
-    stats \
-    ThemePicker \
-    ArrowThemesStub \
-    GameSpace
+    BluetoothExt
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
@@ -47,10 +36,6 @@ PRODUCT_PACKAGES += \
 # Navbar
 PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay
-
-# Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
 
 # Extra tools
 PRODUCT_PACKAGES += \
