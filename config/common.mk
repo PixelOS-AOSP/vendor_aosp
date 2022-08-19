@@ -88,9 +88,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Bootanimation
 include vendor/aosp/config/bootanimation.mk
 
-# Fonts
-include vendor/aosp/config/fonts.mk
-
 # Packages
 include vendor/aosp/config/packages.mk
 
