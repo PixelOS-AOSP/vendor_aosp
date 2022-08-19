@@ -88,6 +88,9 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Bootanimation
 include vendor/aosp/config/bootanimation.mk
 
+# GMS
+include vendor/aosp/config/gms.mk
+
 # Packages
 include vendor/aosp/config/packages.mk
 
