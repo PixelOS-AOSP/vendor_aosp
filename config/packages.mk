@@ -33,10 +33,6 @@ endif
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# Navbar
-PRODUCT_PACKAGES += \
-    NavigationBarNoHintOverlay
-
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
