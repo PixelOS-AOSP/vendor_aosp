@@ -1,4 +1,4 @@
-# ArrowOS core functionality
+# PixelOS core functionality
 on init
     export TERMINFO /system_ext/etc/terminfo
 
