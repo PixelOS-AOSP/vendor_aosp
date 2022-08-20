@@ -127,10 +127,7 @@ $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(LINEAGE_BUI
 endif
 
 # Bootanimation
-TARGET_SCREEN_WIDTH ?= 1080
-TARGET_SCREEN_HEIGHT ?= 1920
-PRODUCT_PACKAGES += \
-    bootanimation.zip
+include vendor/aosp/config/bootanimation.mk
 
 # PixelOS packages
 PRODUCT_PACKAGES += \
