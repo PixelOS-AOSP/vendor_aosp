@@ -162,22 +162,18 @@ else
         $(error "NO KERNEL CONFIG")
     else
         ifneq ($(TARGET_FORCE_PREBUILT_KERNEL),)
-            ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
-                $(error "PREBUILT KERNEL IS NOT ALLOWED ON OFFICIAL BUILDS!")
-            else
-                $(warning **********************************************************)
-                $(warning * Kernel source found and configuration was defined,     *)
-                $(warning * but prebuilt kernel is being forced.                   *)
-                $(warning * While this is likely intentional,                      *)
-                $(warning * it is NOT SUPPORTED WHATSOEVER.                        *)
-                $(warning * Generated kernel headers may not align with            *)
-                $(warning * the ABI of kernel you're including.                    *)
-                $(warning * Please unset TARGET_FORCE_PREBUILT_KERNEL              *)
-                $(warning * to build the kernel from source.                       *)
-                $(warning **********************************************************)
-                FULL_KERNEL_BUILD := false
-                KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
-            endif
+            $(warning **********************************************************)
+            $(warning * Kernel source found and configuration was defined,     *)
+            $(warning * but prebuilt kernel is being forced.                   *)
+            $(warning * While this is likely intentional,                      *)
+            $(warning * it is NOT SUPPORTED WHATSOEVER.                        *)
+            $(warning * Generated kernel headers may not align with            *)
+            $(warning * the ABI of kernel you're including.                    *)
+            $(warning * Please unset TARGET_FORCE_PREBUILT_KERNEL              *)
+            $(warning * to build the kernel from source.                       *)
+            $(warning **********************************************************)
+            FULL_KERNEL_BUILD := false
+            KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
         else
             FULL_KERNEL_BUILD := true
             KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
@@ -344,7 +340,7 @@ endef
 # $(4): staging dir
 # $(5): module load list
 # Depmod requires a well-formed kernel version so 0.0 is used as a placeholder.
-define build-image-kernel-modules-lineage
+define build-image-kernel-modules-custom
     mkdir -p $(2)/lib/modules
     cp $(1) $(2)/lib/modules/
     rm -rf $(4)
@@ -438,14 +434,14 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(PAHOLE)
 				$(eval p := $(subst :,$(space),$(s))) \
 				; mv $$(find $$kernel_modules_dir -name $(word 1,$(p))) $$kernel_modules_dir/$(word 2,$(p))); \
 			modules=$$(find $$kernel_modules_dir -type f -name '*.ko'); \
-			($(call build-image-kernel-modules-lineage,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD))); \
+			($(call build-image-kernel-modules-custom,$$modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD))); \
 			$(if $(BOOT_KERNEL_MODULES),\
 				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES); do \
 					p=$$(find $$kernel_modules_dir -type f -name $$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOOT_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
 				[ $$? -ne 0 ] && exit 1; \
-				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),/,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD))); \
+				($(call build-image-kernel-modules-custom,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),/,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD))); \
 			) \
 		fi
 
