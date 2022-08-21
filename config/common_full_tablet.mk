@@ -1,5 +1,5 @@
 # Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full.mk)
+$(call inherit-product, vendor/aosp/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
@@ -7,7 +7,7 @@ PRODUCT_PACKAGES += \
     LatinIME
 
 # Include Lineage LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay/dictionaries
 
-$(call inherit-product, vendor/lineage/config/telephony.mk)
+$(call inherit-product, vendor/aosp/config/telephony.mk)
