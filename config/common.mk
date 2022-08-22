@@ -259,7 +259,8 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     ThemedIconsOverlay \
     CustomFontPixelLauncherOverlay \
-    DarkBgOverlay
+    DarkBgOverlay \
+    ImmersiveNavigationOverlay
 
 include vendor/aosp/config/version.mk
 
