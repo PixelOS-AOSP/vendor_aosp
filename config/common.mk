@@ -22,7 +22,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/aosp/overlay/common
 
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    ImmersiveNavigationOverlay
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
