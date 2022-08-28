@@ -106,3 +106,6 @@ include vendor/aosp/config/props.mk
 
 # Sounds
 include vendor/aosp/config/sounds.mk
+
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
