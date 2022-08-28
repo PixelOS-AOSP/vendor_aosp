@@ -202,4 +202,7 @@ include vendor/aosp/config/version.mk
 # OTA
 $(call inherit-product, vendor/aosp/config/ota.mk)
 
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
