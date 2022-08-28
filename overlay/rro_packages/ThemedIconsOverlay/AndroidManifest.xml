@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.romcontrolicons.nexuslauncher">
+    <application android:label="ThemedIconsOverlay" android:hasCode="false"/>
+    <overlay android:priority="1" android:targetPackage="com.google.android.apps.nexuslauncher" android:isStatic="true"/>
+</manifest>
