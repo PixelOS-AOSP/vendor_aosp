@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
      RepainterServicePriv \
 
+# Themed icons overlay
+  PRODUCT_PACKAGES += \
+      ThemedIconsOverlay \
+      
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
