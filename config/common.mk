@@ -240,7 +240,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common
 
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    ThemedIconsOverlay
 
 include vendor/aosp/config/version.mk
 
