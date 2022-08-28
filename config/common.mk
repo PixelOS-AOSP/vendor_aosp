@@ -247,4 +247,7 @@ PRODUCT_PACKAGES += \
 
 include vendor/aosp/config/version.mk
 
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
