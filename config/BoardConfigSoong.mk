@@ -47,10 +47,7 @@ SOONG_CONFIG_customNvidiaVars += \
 
 SOONG_CONFIG_NAMESPACES += customQcomVars
 SOONG_CONFIG_customQcomVars += \
-    should_wait_for_qsee \
     supports_extended_compress_format \
-    supports_hw_fde \
-    supports_hw_fde_perf \
     uses_pre_uplink_features_netmgrd \
     uses_qcom_bsp_legacy \
     uses_qti_camera_device \
@@ -68,10 +65,7 @@ SOONG_CONFIG_customGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAME
 SOONG_CONFIG_customGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)
 SOONG_CONFIG_customGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_customNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
-SOONG_CONFIG_customQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_customQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
-SOONG_CONFIG_customQcomVars_supports_hw_fde := $(TARGET_HW_DISK_ENCRYPTION)
-SOONG_CONFIG_customQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_PERF)
 SOONG_CONFIG_customQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_customQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_customQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
