@@ -4,6 +4,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # Google Apps
 $(call inherit-product, vendor/gms/products/gms.mk)
 
+# Include Pixel audio files
+include vendor/aosp/config/PixelAudio.mk
+
 PRODUCT_BRAND ?= PixelOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
