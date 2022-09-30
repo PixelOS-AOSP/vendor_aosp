@@ -172,10 +172,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RepainterServicePriv
 
-# NexusLauncher resources
-PRODUCT_PACKAGES += \
-    NexusLauncherResOverlay
-
 # Extra tools
 PRODUCT_PACKAGES += \
     bash \
@@ -264,11 +260,14 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common
 
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay \
-    ThemedIconsOverlay \
     CustomFontPixelLauncherOverlay \
     DarkBgOverlay \
-    ImmersiveNavigationOverlay
+    ImmersiveNavigationOverlay \
+    NetworkStackOverlay \
+    NexusLauncherResOverlay \
+    PixelDocumentsUIGoogleOverlay \
+    PixelDocumentsUIOverlay \
+    ThemedIconsOverlay
 
 include vendor/aosp/config/version.mk
 
