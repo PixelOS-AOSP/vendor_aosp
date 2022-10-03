@@ -215,4 +215,8 @@
 
     <!-- Model from a certified device  -->
     <string name="config_certifiedModel" translatable="false">Pixel XL</string>
+
+    <!-- Whether to spoof device as pixel for certain google apps, to
+         unlock pixel-exclusive features -->
+    <bool name="config_spoofGoogleApps">true</bool>
 </resources>
