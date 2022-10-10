@@ -21,6 +21,9 @@
             System
         -->
 
+        <!-- Nexus (Pixel) Launcher -->
+        <item>launcher/enable_one_search=true</item>
+
         <!-- Allow users to disable location indicators in Developer Options -->
         <item>privacy/location_indicator_settings_enabled=true</item>
 
