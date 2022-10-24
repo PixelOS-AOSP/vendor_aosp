@@ -242,7 +242,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     ThemedIconsOverlay \
-    CustomFontPixelLauncherOverlay
+    CustomFontPixelLauncherOverlay \
+    DarkBgOverlay
 
 include vendor/aosp/config/version.mk
 
