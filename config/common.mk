@@ -23,7 +23,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
-    ImmersiveNavigationOverlay
+    ImmersiveNavigationOverlay \
+    DarkBgOverlay
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
