@@ -97,6 +97,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
+# Enable whole-program R8 Java optimizations for SystemUI and system_server
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+
 # Bootanimation
 include vendor/aosp/config/bootanimation.mk
 
