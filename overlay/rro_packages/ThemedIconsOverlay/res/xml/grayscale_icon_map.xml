@@ -405,6 +405,9 @@
         drawable="@drawable/themed_icon_vodafone"
         package="com.vodafone.mcare" />
     <icon
+        drawable="@drawable/themed_icon_vodafone"
+        package="om.vodafone.mva" />
+    <icon
         drawable="@drawable/themed_icon_nekogram"
         package="tw.nekomimi.nekogram" />
     <icon
