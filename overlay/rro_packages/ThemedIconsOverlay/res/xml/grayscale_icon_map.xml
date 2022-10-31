@@ -101,6 +101,9 @@
         package="com.google.android.GoogleCameraEng" />
     <icon
         drawable="@drawable/themed_icon_camera"
+        package="com.google.android.GoogleCameraEngR14" />
+    <icon
+        drawable="@drawable/themed_icon_camera"
         package="com.android.MGC" />
     <icon
         drawable="@drawable/themed_icon_camera"
