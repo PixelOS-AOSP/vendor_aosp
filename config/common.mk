@@ -23,7 +23,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
-    ImmersiveNavigationOverlay \
     DarkBgOverlay
 
 # Dex preopt
