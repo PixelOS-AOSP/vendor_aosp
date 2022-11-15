@@ -111,6 +111,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+# Audio
+include vendor/aosp/config/audio.mk
+
 # Bootanimation
 include vendor/aosp/config/bootanimation.mk
 
@@ -122,9 +125,6 @@ include vendor/aosp/config/packages.mk
 
 # Props
 include vendor/aosp/config/props.mk
-
-# Sounds
-include vendor/aosp/config/sounds.mk
 
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
