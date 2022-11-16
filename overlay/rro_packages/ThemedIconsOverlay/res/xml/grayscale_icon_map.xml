@@ -128,6 +128,9 @@
         package="com.android.MGC.not.stable" />
     <icon
         drawable="@drawable/themed_icon_camera"
+        package="com.google.android.GoogleCamera.Urnyx" />
+    <icon
+        drawable="@drawable/themed_icon_camera"
         package="com.google.android.GoogleCamerax" />
     <icon
         drawable="@drawable/themed_icon_camera"
