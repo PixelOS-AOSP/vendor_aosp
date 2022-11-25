@@ -88,6 +88,10 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Build Manifest
 PRODUCT_PACKAGES += \
     build-manifest
