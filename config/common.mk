@@ -95,6 +95,10 @@ endif
 # Bootanimation
 include vendor/aosp/config/bootanimation.mk
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
