@@ -240,6 +240,10 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUIGoogle \
