@@ -140,4 +140,8 @@
       <axis tag="wght" stylevalue="700"/>
     </font>
   </family>
+
+  <family customizationType="new-named-family" name="google-sans-clock">
+    <font>GoogleSansClock-Regular.ttf</font>
+  </family>
 </fonts-modification>
