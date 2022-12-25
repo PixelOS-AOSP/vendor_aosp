@@ -253,9 +253,6 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 # Fonts
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
-# GApps
-$(call inherit-product, vendor/gapps/config.mk)
-
 # RRO Overlays
 $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
 
