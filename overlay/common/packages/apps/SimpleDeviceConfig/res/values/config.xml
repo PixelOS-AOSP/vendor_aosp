@@ -104,7 +104,7 @@
         <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
 
         <!-- Now Playing (Pixel 2017) -->
-        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=220:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20220717-030030/manifest.json</item>
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=3038:https://storage.googleapis.com/music-iq-db/updatable_db_v3/20221218-030052/manifest.json</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_enabled=true</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_music_confidence=0.48</item>
         <item>device_personalization_services/NowPlaying__cloud_api_allowed=true</item>
