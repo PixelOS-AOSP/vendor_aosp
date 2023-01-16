@@ -13,7 +13,12 @@
 -->
 <resources>
     <color name="system_neutral1_900">#ff000000</color>
+    <color name="system_neutral1_1000">#ff000000</color>
     <color name="system_neutral2_900">#ff000000</color>
+    <color name="system_neutral2_1000">#ff000000</color>
+    <color name="system_accent1_1000">#ff000000</color>
+    <color name="system_accent2_1000">#ff000000</color>
+    <color name="system_accent3_1000">#ff000000</color>
     <color name="background_device_default_dark">#ff000000</color>
     <color name="primary_dark_device_default_dark">#ff000000</color>
     <color name="primary_dark_device_default_settings">#ff000000</color>
