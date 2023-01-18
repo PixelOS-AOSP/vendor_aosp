@@ -90,13 +90,6 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# PixelOS packages
-PRODUCT_PACKAGES += \
-    Updater
-
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init/init.custom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-updater.rc \
-
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
@@ -194,5 +187,8 @@ PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay
 
 include vendor/aosp/config/version.mk
+
+# OTA
+$(call inherit-product, vendor/aosp/config/ota.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
