@@ -160,13 +160,6 @@ endif
 # Bootanimation
 include vendor/aosp/config/bootanimation.mk
 
-# PixelOS packages
-PRODUCT_PACKAGES += \
-    Updater
-
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init/init.custom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-updater.rc \
-
 # Charger
 PRODUCT_PACKAGES += \
     product_charger_res_images
@@ -274,6 +267,9 @@ include vendor/aosp/config/version.mk
 # TouchGestures
 PRODUCT_PACKAGES += \
     TouchGestures
+
+# OTA
+$(call inherit-product, vendor/aosp/config/ota.mk)
 
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
