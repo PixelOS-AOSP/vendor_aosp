@@ -11,3 +11,9 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.custom.version=$(CUSTOM_VERSION) \
     ro.custom.device=$(CUSTOM_BUILD) \
     ro.modversion=$(CUSTOM_VERSION)
+
+# Updater
+ifeq ($(IS_OFFICIAL),true)
+    ADDITIONAL_SYSTEM_PROPERTIES  += \
+        ro.is_official=true
+endif
