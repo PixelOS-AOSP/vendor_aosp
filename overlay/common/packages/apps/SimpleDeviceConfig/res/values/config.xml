@@ -21,6 +21,9 @@
             System
         -->
 
+        <!-- Disable the new and advanced Privacy Hub -->
+        <item>privacy/safety_center_is_enabled=false</item>
+
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
