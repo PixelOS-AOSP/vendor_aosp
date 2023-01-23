@@ -259,8 +259,7 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     ThemedIconsOverlay \
     CustomFontPixelLauncherOverlay \
-    DarkBgOverlay \
-    NavigationBarNoHintOverlay
+    DarkBgOverlay
 
 include vendor/aosp/config/version.mk
 
