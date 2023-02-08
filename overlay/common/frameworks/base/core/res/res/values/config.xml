@@ -208,5 +208,11 @@
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
     <!-- Build fingerprint from a GMS certified device -->
-    <string name="config_certifiedFingerprint" translatable="false">google/angler/angler:6.0/MDB08L/2343525:user/release-keys</string>
+    <string name="config_certifiedFingerprint" translatable="false">google/marlin/marlin:7.1.2/NJH47F/4146041:user/release-keys</string>
+
+    <!-- Device name from a certified device-->
+    <string name="config_certifiedDevice" translatable="false">marlin</string>
+
+    <!-- Model from a certified device  -->
+    <string name="config_certifiedModel" translatable="false">Pixel XL</string>
 </resources>
