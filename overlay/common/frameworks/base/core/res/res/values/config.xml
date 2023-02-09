@@ -325,6 +325,12 @@
     <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
 
-    <!-- Fingerprint from a certified device -->
-    <string name="config_certifiedFingerprint" translatable="false">google/husky/husky:14/UD1A.231105.004/11010374:user/release-keys</string>
+    <!-- Build properties from a GMS certified device against current platform SPL level -->
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>husky</item>   <!-- Build.DEVICE -->
+        <item>husky</item>   <!-- Build.PRODUCT -->
+        <item>Pixel 8 Pro</item> <!-- Build.MODEL -->
+        <item>google/husky/husky:14/UD1A.231105.004/11010374:user/release-keys</item> <!-- Build.FINGERPRINT -->
+    </string-array>
+
 </resources>
