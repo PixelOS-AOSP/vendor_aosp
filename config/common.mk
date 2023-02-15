@@ -172,6 +172,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RepainterServicePriv
 
+# NexusLauncher resources
+PRODUCT_PACKAGES += \
+    NexusLauncherResOverlay
+
 # Extra tools
 PRODUCT_PACKAGES += \
     bash \
