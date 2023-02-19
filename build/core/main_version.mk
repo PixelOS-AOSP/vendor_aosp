@@ -15,5 +15,5 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
 # Updater
 ifeq ($(IS_OFFICIAL),true)
     ADDITIONAL_SYSTEM_PROPERTIES  += \
-        ro.is_official=true
+        net.pixelos.build_type=ci
 endif
