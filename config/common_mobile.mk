@@ -15,6 +15,20 @@ PRODUCT_PACKAGES += \
     AudioFX
 endif
 
+ifeq ($(PRODUCT_TYPE), go)
+PRODUCT_PACKAGES += \
+    Launcher3Go
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3Go
+else
+PRODUCT_PACKAGES += \
+    Launcher3
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3
+endif
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images

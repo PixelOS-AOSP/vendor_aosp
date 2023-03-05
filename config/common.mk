@@ -246,8 +246,7 @@ PRODUCT_PACKAGES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    NexusLauncherRelease
+    SystemUI
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -260,13 +259,11 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common
 
 PRODUCT_PACKAGES += \
-    CustomFontPixelLauncherOverlay \
     NavigationBarNoHintOverlay \
     NetworkStackOverlay \
-    NexusLauncherResOverlay \
+    ParanoidLauncherOverlay \
     PixelDocumentsUIGoogleOverlay \
-    PixelDocumentsUIOverlay \
-    ThemedIconsOverlay
+    PixelDocumentsUIOverlay
 
 include vendor/aosp/config/version.mk
 
