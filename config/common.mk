@@ -262,7 +262,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CustomFontPixelLauncherOverlay \
     DarkBgOverlay \
-    ImmersiveNavigationOverlay \
+    NavigationBarNoHintOverlay \
     NetworkStackOverlay \
     NexusLauncherResOverlay \
     PixelDocumentsUIGoogleOverlay \
