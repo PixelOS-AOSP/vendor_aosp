@@ -118,10 +118,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
-# Set default refresh rate threshold
-PRODUCT_VENDOR_PROPERTIES += \
-    debug.sf.frame_rate_multiple_threshold?=60
-
 # Include font files
 include vendor/aosp/config/fonts.mk
 
