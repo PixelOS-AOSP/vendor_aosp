@@ -261,6 +261,7 @@
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEng2"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraPixelX"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.shamim.cam"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.ss.android.ugc.aweme"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraTigr"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.UltraCVM"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.googleCamera.Wichaya8"/>
