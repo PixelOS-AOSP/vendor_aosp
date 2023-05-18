@@ -22,7 +22,10 @@
         -->
 
         <!-- Nexus (Pixel) Launcher -->
+        <item>launcher/ENABLE_QUICK_LAUNCH_V2=true</item>
+        <item>launcher/GBOARD_UPDATE_ENTER_KEY=true</item>
         <item>launcher/enable_one_search=true</item>
+        <item>launcher/enable_quick_launch_v2=true</item>
 
         <!-- System Ui -->
         <item>systemui/quick_access_wallet_enabled=true</item>
