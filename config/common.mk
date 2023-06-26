@@ -90,10 +90,6 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # Repainter integration
 PRODUCT_PACKAGES += \
     RepainterServicePriv
