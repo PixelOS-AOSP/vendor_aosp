@@ -108,6 +108,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     product_charger_res_images
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Repainter integration
 PRODUCT_PACKAGES += \
     RepainterServicePriv
