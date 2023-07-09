@@ -206,10 +206,10 @@
 
     <!-- Build properties from a GMS certified device against current platform SPL level -->
     <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>marlin</item>   <!-- Build.DEVICE -->
-        <item>marlin</item>   <!-- Build.PRODUCT -->
-        <item>Pixel XL</item> <!-- Build.MODEL -->
-        <item>google/marlin/marlin:7.1.2/NJH47F/4146041:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>walleye</item>   <!-- Build.DEVICE -->
+        <item>walleye</item>   <!-- Build.PRODUCT -->
+        <item>Pixel 2</item> <!-- Build.MODEL -->
+        <item>google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys</item> <!-- Build.FINGERPRINT -->
     </string-array>
 
     <!-- Whether to spoof device as pixel for certain google apps, to
