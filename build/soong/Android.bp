@@ -54,7 +54,7 @@ cc_library_headers {
 soong_config_module_type {
     name: "aapt_version_code",
     module_type: "java_defaults",
-    config_namespace: "lineageGlobalVars",
+    config_namespace: "customGlobalVars",
     value_variables: ["aapt_version_code"],
     properties: ["aaptflags"],
 }
