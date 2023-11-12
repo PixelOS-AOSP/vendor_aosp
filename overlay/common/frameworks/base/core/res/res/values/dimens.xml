@@ -16,18 +16,6 @@
 */
 -->
 <resources>
-    <!-- Corner radius of system dialogs -->
-    <dimen name="config_dialogCornerRadius">28dp</dimen>
-    <!-- Corner radius of system buttons -->
-    <dimen name="config_buttonCornerRadius">4dp</dimen>
-    <!-- Corner radius for bottom sheet system dialogs -->
-    <dimen name="config_bottomDialogCornerRadius">16dp</dimen>
-    <!-- Corner radius of system progress bars -->
-    <dimen name="config_progressBarCornerRadius">1000dp</dimen>
-    <!-- System-provided radius for the background view of app widgets. The resolved value of this resource may change at runtime. -->
-    <dimen name="system_app_widget_background_radius">28dp</dimen>
-    <!-- System-provided radius for inner views on app widgets. The resolved value of this resource may change at runtime. -->
-    <dimen name="system_app_widget_inner_radius">20dp</dimen>
     <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
          calculate the status bar height. -->
     <dimen name="status_bar_height_default">28dp</dimen>
