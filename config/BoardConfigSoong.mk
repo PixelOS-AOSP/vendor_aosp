@@ -51,7 +51,6 @@ SOONG_CONFIG_NAMESPACES += customNvidiaVars
 SOONG_CONFIG_customNvidiaVars += \
     uses_nvidia_enhancements
 
-<<<<<<< HEAD
 SOONG_CONFIG_NAMESPACES += customQcomVars
 SOONG_CONFIG_customQcomVars += \
     qti_vibrator_effect_lib \
