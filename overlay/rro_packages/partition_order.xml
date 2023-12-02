@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<partition-order>
+    <partition name="system"/>
+    <partition name="system_ext"/>
+    <partition name="product"/>
+    <partition name="oem"/>
+    <partition name="vendor"/>
+    <partition name="odm"/>
+</partition-order>
