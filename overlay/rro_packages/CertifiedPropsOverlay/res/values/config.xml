@@ -6,12 +6,12 @@
 <resources>
     <!-- Build properties from a GMS certified device against current platform SPL level -->
     <string-array name="config_certifiedBuildProperties" translatable="false">
-        <item>PRODUCT:husky</item>
-        <item>DEVICE:husky</item>
-        <item>MANUFACTURER:Google</item>
-        <item>BRAND:google</item>
-        <item>MODEL:Pixel 8 Pro</item>
-        <item>FINGERPRINT:google/husky/husky:14/UD1A.231105.004/11010374:user/release-keys</item>
-        <item>VERSION.SECURITY_PATCH:2023-11-05</item>
+        <item>PRODUCT:ferrari</item>
+        <item>DEVICE:ferrari</item>
+        <item>MANUFACTURER:Xiaomi</item>
+        <item>BRAND:xiaomi</item>
+        <item>MODEL:Mi 4i</item>
+        <item>FINGERPRINT:Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V6.4.10.0.LXIMICB:user/release-keys</item>
+        <item>VERSION.SECURITY_PATCH:2019-08-05</item>
     </string-array>
 </resources>
