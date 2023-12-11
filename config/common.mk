@@ -98,10 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
 # Overlay
-PRODUCT_COPY_FILES += \
-    vendor/aosp/overlay/rro_packages/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml \
-    vendor/aosp/overlay/rro_packages/partition_order.xml:$(TARGET_COPY_OUT_PRODUCT)/overlay/partition_order.xml
-
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
@@ -225,7 +221,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
-    CertifiedPropsOverlay \
     CustomFontPixelLauncherOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay \
