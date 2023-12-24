@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 #
 # Copyright (C) 2018 The LineageOS Project
 #
@@ -17,10 +17,10 @@
 
 import re
 import sys
-from importlib import reload
 
 def main(argv):
     reload(sys)
+    sys.setdefaultencoding('utf8')
     original_file = 'vendor/aosp/prebuilt/common/etc/apns-conf.xml'
 
     if len(argv) == 3:
