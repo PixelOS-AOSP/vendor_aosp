@@ -206,6 +206,9 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/xbin/su
 endif
 endif
 
