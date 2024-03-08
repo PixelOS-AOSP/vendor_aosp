@@ -209,9 +209,11 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
-# SystemUI
+# Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUIGoogle \
+    NexusLauncherRelease \
+    GoogleDialer
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
