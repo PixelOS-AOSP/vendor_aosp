@@ -220,7 +220,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
 # Microsoft
-$(call inherit-product, vendor/microsoft/packages.mk)
+#$(call inherit-product, vendor/microsoft/packages.mk)
 
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
