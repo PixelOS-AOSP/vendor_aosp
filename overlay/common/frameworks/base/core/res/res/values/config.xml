@@ -313,8 +313,6 @@
         <item>device_personalization_services/Echo_smartspace__smartspace_enable_daily_forecast=true</item>
         <item>device_personalization_services/Echo_smartspace__smartspace_enable_timely_reminder=true</item>
 
-        <!-- Pixel Launcher -->
-        <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
     </string-array>
 
     <!-- Name of a font family to use for body text. -->
