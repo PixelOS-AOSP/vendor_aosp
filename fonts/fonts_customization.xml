@@ -42,26 +42,66 @@
     </font>
   </family>
 
-  <family customizationType="new-named-family" name="google-sans-flex">
-    <font weight="100" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="200" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="300" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="400" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="500" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="600" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="700" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="800" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-    <font weight="900" style="normal">GoogleSansFlex-Regular.ttf
-    </font>
-  </family>
+  <family-list customizationType="new-named-family" name="google-sans-flex">
+    <family>
+      <font style="normal" weight="100">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="100" tag="wght" />
+      </font>
+      <font style="normal" weight="200">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="200" tag="wght" />
+      </font>
+      <font style="normal" weight="300">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="300" tag="wght" />
+      </font>
+      <font style="normal" weight="400">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="400" tag="wght" />
+      </font>
+      <font style="normal" weight="500">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="500" tag="wght" />
+      </font>
+      <font style="normal" weight="600">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="600" tag="wght" />
+      </font>
+      <font style="normal" weight="700">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="700" tag="wght" />
+      </font>
+      <font style="normal" weight="800">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="800" tag="wght" />
+      </font>
+      <font style="normal" weight="900">GoogleSansFlex-Regular.ttf
+        <axis stylevalue="900" tag="wght" />
+      </font>
+    </family>
+    <family>
+      <font style="normal" weight="100">GoogleSans-Regular.ttf
+        <axis stylevalue="100" tag="wght" />
+      </font>
+      <font style="normal" weight="200">GoogleSans-Regular.ttf
+        <axis stylevalue="200" tag="wght" />
+      </font>
+      <font style="normal" weight="300">GoogleSans-Regular.ttf
+        <axis stylevalue="300" tag="wght" />
+      </font>
+      <font style="normal" weight="400">GoogleSans-Regular.ttf
+        <axis stylevalue="400" tag="wght" />
+      </font>
+      <font style="normal" weight="500">GoogleSans-Regular.ttf
+        <axis stylevalue="500" tag="wght" />
+      </font>
+      <font style="normal" weight="600">GoogleSans-Regular.ttf
+        <axis stylevalue="600" tag="wght" />
+      </font>
+      <font style="normal" weight="700">GoogleSans-Regular.ttf
+        <axis stylevalue="700" tag="wght" />
+      </font>
+      <font style="normal" weight="800">GoogleSans-Regular.ttf
+        <axis stylevalue="800" tag="wght" />
+      </font>
+      <font style="normal" weight="900">GoogleSans-Regular.ttf
+        <axis stylevalue="900" tag="wght" />
+      </font>
+    </family>
+  </family-list>
 
   <family customizationType="new-named-family" name="google-sans-medium">
     <font weight="500" style="normal">GoogleSans-Regular.ttf
