@@ -127,10 +127,6 @@ include vendor/aosp/config/bootanimation.mk
 PRODUCT_PACKAGES += \
     BtHelper
 
-# Build Manifest
-PRODUCT_PACKAGES += \
-    build-manifest
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
