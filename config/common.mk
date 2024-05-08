@@ -139,13 +139,9 @@ PRODUCT_PACKAGES += \
 
 # Extra tools
 PRODUCT_PACKAGES += \
-    bash \
     curl \
     getcap \
-    htop \
-    nano \
-    setcap \
-    vim
+    setcap
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
