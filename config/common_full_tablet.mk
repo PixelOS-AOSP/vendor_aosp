@@ -1,7 +1,7 @@
 # Inherit mobile full common stuff
 $(call inherit-product, vendor/aosp/config/common_mobile_full.mk)
 
-# Inherit full tablet common stuff
-$(call inherit-product, vendor/aosp/config/full_tablet.mk)
+# Inherit tablet common stuff
+$(call inherit-product, vendor/aosp/config/tablet.mk)
 
 $(call inherit-product, vendor/aosp/config/telephony.mk)
