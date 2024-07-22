@@ -3,3 +3,9 @@ java_import {
     jars: ["lib/vendorAacHardwareRichtapVibrator.jar"],
     sdk_version: "current",
 }
+
+prebuilt_etc_xml {
+    name: "apns-conf.xml",
+    product_specific: true,
+    src: "etc/apns-conf.xml",
+}
