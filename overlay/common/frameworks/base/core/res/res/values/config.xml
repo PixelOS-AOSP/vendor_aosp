@@ -305,6 +305,10 @@
         <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
         <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
 
+        <!-- Nearby -->
+        <item>nearby/nearby_enable_presence_broadcast_legacy=false</item>
+        <item>nearby/nearby_support_test_app=false</item>
+
         <!-- Notifications Assistant -->
         <item>device_personalization_services/NotificationAssistant__enable_service=true</item>
         <item>device_personalization_services/NotificationAssistant__enable_upgrade_importance=true</item>
