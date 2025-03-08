@@ -1,3 +1,5 @@
+TARGET_HAS_WIFIONLY := true
+
 # Inherit mobile full common stuff
 $(call inherit-product, vendor/aosp/config/common_mobile_full.mk)
 
