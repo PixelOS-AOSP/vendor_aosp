@@ -16,3 +16,4 @@
 # Includes support for:
 # 1) NvCPL / Application Profiles
 NV_ANDROID_FRAMEWORK_ENHANCEMENTS := true
+$(call soong_config_set,NV_ANDROID,FRAMEWORK_ENHANCEMENTS,true)
