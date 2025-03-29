@@ -110,7 +110,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Overlay
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
+    ro.boot.vendor.overlay.theme=com.google.android.systemui.gxoverlay
 
 # Include font files
 include vendor/aosp/fonts/fonts.mk
@@ -253,8 +253,7 @@ PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     CustomFontPixelLauncherOverlay \
     DocumentsUIOverlay \
-    NetworkStackOverlay \
-    NavigationBarNoHintOverlay
+    NetworkStackOverlay
 
 # TextClassifier
 PRODUCT_PACKAGES += \
