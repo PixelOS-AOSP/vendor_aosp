@@ -110,7 +110,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Overlay
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.google.android.systemui.gxoverlay
+    ro.boot.vendor.overlay.theme=com.google.android.systemui.gxoverlay_gms
 
 # Include font files
 include vendor/aosp/fonts/fonts.mk
