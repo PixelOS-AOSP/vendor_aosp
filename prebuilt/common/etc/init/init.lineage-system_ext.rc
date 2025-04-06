@@ -4,6 +4,9 @@ on init
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -z
-    oneshot
+    socket dumpstate stream 0660 shell log
+    class main
+    user root
     disabled
+    oneshot
     keycodes 114 115 116
