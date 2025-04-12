@@ -257,7 +257,8 @@ PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     CustomFontPixelLauncherOverlay \
     DocumentsUIOverlay \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    PixelLauncherNoGestureHintOverlay
 
 # TextClassifier
 PRODUCT_PACKAGES += \
