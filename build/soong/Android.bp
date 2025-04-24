@@ -148,17 +148,6 @@ power_libperfmgr {
 }
 
 soong_config_module_type {
-    name: "surfaceflinger_udfps_lib",
-    module_type: "cc_defaults",
-    config_namespace: "customGlobalVars",
-    value_variables: ["target_surfaceflinger_udfps_lib"],
-    properties: [
-        "cppflags",
-        "whole_static_libs",
-    ],
-}
-
-soong_config_module_type {
     name: "target_camera_package_name",
     module_type: "cc_defaults",
     config_namespace: "customGlobalVars",
@@ -171,16 +160,6 @@ target_camera_package_name {
     soong_config_variables: {
         target_camera_package_name: {
             cppflags: ["-DCAMERA_PACKAGE_NAME=\"%s\""],
-        },
-    },
-}
-
-surfaceflinger_udfps_lib {
-    name: "surfaceflinger_udfps_lib_defaults",
-    soong_config_variables: {
-        target_surfaceflinger_udfps_lib: {
-            cppflags: ["-DTARGET_PROVIDES_UDFPS_LIB"],
-            whole_static_libs: ["%s"],
         },
     },
 }
