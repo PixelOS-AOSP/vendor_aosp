@@ -28,15 +28,10 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 
 SOONG_CONFIG_NAMESPACES += customGlobalVars
 SOONG_CONFIG_customGlobalVars += \
-    additional_gralloc_10_usage_bits \
-    camera_override_format_from_reserved
-
-# Soong bool variables
-SOONG_CONFIG_customGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
+    additional_gralloc_10_usage_bits
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
 
 # Soong value variables
 SOONG_CONFIG_customGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
@@ -49,6 +44,11 @@ endif
 # libcameraservice extension
 ifneq ($(TARGET_CAMERA_SERVICE_EXT_LIB),)
     $(call soong_config_set,libcameraservice,ext_lib,$(TARGET_CAMERA_SERVICE_EXT_LIB))
+endif
+
+# Camera
+ifneq ($(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED),)
+    $(call soong_config_set,camera,override_format_from_reserved,$(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED))
 endif
 
 # Lineage Health HAL
